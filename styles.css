@@ -269,3 +269,36 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+/* Personal info styles */
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.personal-info__header {
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+}
+
+.personal-info__list {
+    color: var(--secondary-text-color);
+    padding-left: 20px;
+}
+
+.personal-info__list li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.personal-info__text {
+    color: var(--secondary-text-color);
+    text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+}
